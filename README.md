@@ -1,7 +1,7 @@
 # Portfolio — Stanislas Loïc Mani Onana
 
 Portfolio professionnel présentant mon profil d'informaticien spécialisé en
-**développement mobile (Flutter)**, **administration réseau** et **cybersécurité**.
+**développement mobile (Claude Code)**, **administration réseau** et **cybersécurité**.
 
 ## Aperçu
 

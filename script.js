@@ -1,6 +1,6 @@
 // ----- typed role text -----
 const roles = [
-  'Développeur Mobile (Flutter)',
+  'Développeur Mobile (Claude Code)',
   'Administrateur Réseau',
   'Passionné de Cybersécurité',
   'Technicien Systèmes & Sécurité'
