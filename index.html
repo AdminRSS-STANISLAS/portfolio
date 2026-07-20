@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stanislas Loïc Mani Onana — Développeur & Spécialiste Réseaux/Sécurité</title>
+<meta name="description" content="Portfolio de Stanislas Loïc Mani Onana, informaticien spécialisé en développement mobile, administration réseau et cybersécurité.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<canvas id="matrix" aria-hidden="true"></canvas>
+
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-bracket">&lt;</span>SLM<span class="logo-bracket">/&gt;</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Accueil</a>
+      <a href="#about">Profil</a>
+      <a href="#skills">Compétences</a>
+      <a href="#experience">Expérience</a>
+      <a href="#education">Formation</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="assets/CV_Stanislas_Mani_Onana.pdf" class="btn btn-ghost nav-cv" download>Télécharger CV</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot"></span> disponible pour de nouvelles opportunités</p>
+        <h1>Mani Onana<br><span class="accent">Stanislas Loïc</span></h1>
+        <h2 class="role">
+          <span id="typed"></span><span class="caret">|</span>
+        </h2>
+        <p class="lead">
+          Passionné par les technologies de l'information, les réseaux et la cybersécurité.
+          Rigoureux, curieux et toujours prêt à relever de nouveaux défis techniques —
+          du développement mobile à la sécurisation des infrastructures.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Me contacter</a>
+          <a href="assets/CV_Stanislas_Mani_Onana.pdf" class="btn btn-outline" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+            Télécharger le CV
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Yaoundé, Cameroun</span>
+          <span>🗣️ Français &amp; Anglais</span>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="assets/profile.jpg" alt="Portrait de Stanislas Loïc Mani Onana" loading="eager">
+          <div class="frame-tag frame-tag-1">&lt; DEV /&gt;</div>
+          <div class="frame-tag frame-tag-2">SEC://</div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Défiler">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <p class="section-kicker">// 01 — Profil</p>
+    <h2 class="section-title">Qui suis-je</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <p>
+          Informaticien de 25 ans basé à Yaoundé, je conçois des applications mobiles avec
+          <strong>Flutter</strong>, j'administre des infrastructures réseau (<strong>LAN/WAN, MikroTik,
+          Firewall</strong>) et je m'implique activement dans la <strong>cybersécurité</strong> —
+          de l'analyse de vulnérabilités à la sécurisation des serveurs virtualisés.
+        </p>
+        <p>
+          Mon objectif : mettre mes compétences techniques au service d'une équipe dynamique
+          et innover dans le domaine informatique, à la croisée du développement et de la sécurité.
+        </p>
+      </div>
+      <ul class="about-facts">
+        <li><span>Âge</span><strong>25 ans</strong></li>
+        <li><span>Localisation</span><strong>Yaoundé, Cameroun</strong></li>
+        <li><span>Langues</span><strong>Français, Anglais (IELTS)</strong></li>
+        <li><span>Permis</span><strong>Catégorie B</strong></li>
+        <li><span>Passeport</span><strong>Oui</strong></li>
+        <li><span>Domaines</span><strong>Dev Mobile · Réseaux · Cybersécurité</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <p class="section-kicker">// 02 — Compétences</p>
+    <h2 class="section-title">Stack technique</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon">📱</div>
+        <h3>Développement Mobile</h3>
+        <ul>
+          <li>Applications Android avec <strong>Flutter</strong> (Dart)</li>
+          <li>Assistance IA au développement (Claude Code)</li>
+          <li>Android Studio sur macOS — build &amp; déploiement</li>
+          <li>Intégration API REST, gestion JSON / SQLite</li>
+          <li>Publication d'applications Android</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🛡️</div>
+        <h3>Sécurité &amp; Maintenance</h3>
+        <ul>
+          <li>Sécurisation des infrastructures et systèmes</li>
+          <li>Analyse de vulnérabilités (Pentest basique)</li>
+          <li>Gestion des sauvegardes, correctifs, mises à jour</li>
+          <li>Gestion des incidents et support technique</li>
+          <li>Bonnes pratiques en cybersécurité</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <h3>Administration Système &amp; Réseau</h3>
+        <ul>
+          <li>Administration Windows &amp; Linux</li>
+          <li>Virtualisation : Proxmox, VMware, VirtualBox</li>
+          <li>Réseaux : LAN, WAN, VLAN, VPN, DHCP, DNS, NAT</li>
+          <li>Équipements réseau : MikroTik, Switch, Routeur, Firewall</li>
+          <li>Surveillance et optimisation des performances</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">⚙️</div>
+        <h3>Développement &amp; Intégration</h3>
+        <ul>
+          <li>Architecture MVC et bonnes pratiques de code</li>
+          <li>Consommation d'API REST (FastAPI, Postman)</li>
+          <li>Gestion des packages &amp; dépendances</li>
+          <li>Intégration continue avec Git &amp; GitHub</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🗄️</div>
+        <h3>Bases de Données &amp; Outils</h3>
+        <ul>
+          <li>MySQL, SQL Server — requêtes &amp; gestion</li>
+          <li>Docker &amp; conteneurisation</li>
+          <li>Scripting : Python, Bash, PowerShell</li>
+          <li>Git, GitHub, Postman, Figma, VS Code, Trello</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🤝</div>
+        <h3>Compétences Transversales</h3>
+        <ul>
+          <li>Travail en équipe &amp; collaboration</li>
+          <li>Résolution de problèmes &amp; esprit d'analyse</li>
+          <li>Gestion du temps &amp; des priorités</li>
+          <li>Communication écrite et orale</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <p class="section-kicker">// 03 — Expérience</p>
+    <h2 class="section-title">Parcours professionnel</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Depuis le 01 Juillet 2026 — Aujourd'hui</span>
+          <h3>Développeur Mobile &amp; Administrateur Réseau</h3>
+          <p class="timeline-org">ANGARA GROUPE</p>
+          <ul>
+            <li>Développement d'applications mobiles (Android) avec Flutter et assistance de Claude Code</li>
+            <li>Administration et maintenance de l'infrastructure réseau (LAN/WAN)</li>
+            <li>Gestion des équipements réseaux (MikroTik, Switch, Routeur, Firewall)</li>
+            <li>Surveillance et optimisation des performances réseau</li>
+            <li>Support technique et accompagnement des utilisateurs</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Depuis le 10 Octobre 2025 — Freelance</span>
+          <h3>Technicien Systèmes, Réseau &amp; Sécurité</h3>
+          <p class="timeline-org">PROCAD Engineering</p>
+          <ul>
+            <li>Administration réseau et sécurité des serveurs</li>
+            <li>Gestion et virtualisation des systèmes avec Proxmox (VM, conteneurs LXC)</li>
+            <li>Maintenance des systèmes et infrastructures</li>
+            <li>Gestion des sauvegardes et mises à jour</li>
+            <li>Support technique et résolution d'incidents</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section section-alt">
+    <p class="section-kicker">// 04 — Formation</p>
+    <h2 class="section-title">Parcours académique</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Novembre 2022 — Juillet 2023</span>
+          <h3>Licence (Bachelor Degree) — Administration et Sécurité des Réseaux</h3>
+          <p class="timeline-org">Institut Supérieur des Sciences, Arts et Métiers (ISSAM)</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Octobre 2020 — Juin/Juillet 2022</span>
+          <h3>Brevet de Technicien Supérieur — Génie Logiciel</h3>
+          <p class="timeline-org">Institut Supérieur des Sciences, Arts et Métiers (ISSAM)</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Septembre 2019 — Juin 2020</span>
+          <h3>GCE Advanced Level (Science)</h3>
+          <p class="timeline-org">Collège Bilingue Marie Albert Prestige</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Septembre 2017 — Juin 2018</span>
+          <h3>GCE Ordinary Level (Science)</h3>
+          <p class="timeline-org">Collège Bilingue Marie Albert Prestige</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <p class="section-kicker">// 05 — Certifications</p>
+    <h2 class="section-title">Certifications &amp; formations en ligne</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card cert-highlight">
+        <span class="cert-badge">Certification</span>
+        <h3>Introduction to Cyber Security</h3>
+        <p class="cert-org">Cisco Networking Academy</p>
+        <p class="cert-date">02 Novembre 2023</p>
+      </div>
+
+      <div class="cert-card cert-highlight">
+        <span class="cert-badge">Test de langue</span>
+        <h3>IELTS — International English Language Testing System</h3>
+        <p class="cert-org">British Council</p>
+        <p class="cert-date">11 Juillet 2025</p>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-badge">EC-Council</span>
+        <h3>SQL Injection Attacks</h3>
+        <p class="cert-date">22 Mai 2023</p>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-badge">EC-Council</span>
+        <h3>Ethical Hacking Essentials (EHE)</h3>
+        <p class="cert-date">22 Mai 2023</p>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-badge">EC-Council</span>
+        <h3>Android Bug Bounty Hunting</h3>
+        <p class="cert-date">22 Mai 2023</p>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-badge">EC-Council</span>
+        <h3>Introduction to Dark Web, Anonymity and Cryptocurrency</h3>
+        <p class="cert-date">22 Mai 2023</p>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-badge">EC-Council</span>
+        <h3>Cisco Labs Crash Course</h3>
+        <p class="cert-date">22 Mai 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-contact">
+    <p class="section-kicker">// 06 — Contact</p>
+    <h2 class="section-title">Discutons de votre projet</h2>
+    <p class="contact-lead">
+      Ouvert aux opportunités en développement mobile, administration réseau et cybersécurité.
+      N'hésitez pas à me contacter.
+    </p>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:manionana1704@gmail.com">
+        <span class="contact-icon">✉️</span>
+        <span class="contact-label">Email</span>
+        <span class="contact-value">manionana1704@gmail.com</span>
+      </a>
+      <a class="contact-card" href="tel:+237693866546">
+        <span class="contact-icon">📞</span>
+        <span class="contact-label">Téléphone</span>
+        <span class="contact-value">+237 693 866 546</span>
+      </a>
+      <div class="contact-card">
+        <span class="contact-icon">📍</span>
+        <span class="contact-label">Localisation</span>
+        <span class="contact-value">Yaoundé, Cameroun</span>
+      </div>
+      <a class="contact-card" href="https://github.com/" target="_blank" rel="noopener">
+        <span class="contact-icon">💻</span>
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">github.com/votre-pseudo</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Stanislas Loïc Mani Onana — Conçu &amp; développé avec soin.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
