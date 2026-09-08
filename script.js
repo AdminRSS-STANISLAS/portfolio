@@ -1,9 +1,9 @@
 // ----- typed role text -----
 const roles = [
-  'Développeur Mobile (Claude Code)',
-  'Administrateur Réseau',
-  'Passionné de Cybersécurité',
-  'Technicien Systèmes & Sécurité'
+  'Développeur freelance',
+  'Applications web & mobile',
+  'Outils métier sur mesure',
+  'Développement assisté par IA'
 ];
 const typedEl = document.getElementById('typed');
 let roleIndex = 0, charIndex = 0, deleting = false;

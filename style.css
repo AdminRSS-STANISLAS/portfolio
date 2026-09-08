@@ -697,3 +697,115 @@ a.contact-card:hover {
   .contact-grid { grid-template-columns: 1fr; }
   .section { padding: 80px 20px; }
 }
+
+/* ---------- projets ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 22px;
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(34,224,160,0.35);
+  box-shadow: 0 16px 40px -16px rgba(34,224,160,0.15);
+}
+
+.project-featured {
+  grid-column: 1 / -1;
+  border-color: rgba(34,224,160,0.28);
+  background: linear-gradient(160deg, var(--surface-2), var(--surface));
+}
+
+.project-tag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid rgba(34,224,160,0.25);
+  border-radius: 999px;
+  padding: 4px 11px;
+  margin-bottom: 12px;
+}
+
+.project-card h3 {
+  font-size: 1.15rem;
+  margin: 0 0 14px;
+  line-height: 1.35;
+}
+
+.project-desc {
+  color: var(--text-dim);
+  font-size: 0.94rem;
+  margin: 0 0 14px;
+}
+
+.project-desc strong { color: var(--text); font-weight: 600; }
+
+.project-points {
+  margin: 0 0 18px;
+}
+
+.project-points li {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  padding: 5px 0 5px 18px;
+  position: relative;
+}
+
+.project-points li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.project-stack span {
+  font-family: var(--mono);
+  font-size: 0.73rem;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 9px;
+  background: var(--bg-alt);
+}
+
+.project-links {
+  margin-top: auto;
+}
+
+.projects-more {
+  margin-top: 26px;
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 0.9rem;
+}
+
+.projects-more a {
+  color: var(--accent);
+  border-bottom: 1px solid rgba(34,224,160,0.35);
+}
+
+@media (max-width: 600px) {
+  .project-card { padding: 22px; }
+}
