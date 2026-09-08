@@ -40,6 +40,6 @@ Hébergé via **GitHub Pages** (branche `main`, dossier racine).
 
 ## Contact
 
-- Email : manionana1704@gmail.com
+- Email : manionanastanislasloic2024@gmail.com
 - GitHub : [@AdminRSS-STANISLAS](https://github.com/AdminRSS-STANISLAS)
 - Localisation : Yaoundé, Cameroun — disponible en remote
